@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slikopleskarstvo Špeh d.o.o. | Fasaderstvo Gornji Grad | 03 838 11 33</title>
+  <meta name="description" content="Profesionalno slikopleskarstvo in fasaderstvo v Gornjem Gradu od leta 1991. Pleskanje hiš in stanovanj, fasadni sistemi DEMIT, suhomontaža Knauf. Pokličite: 03 838 11 33" />
+  <meta name="keywords" content="slikopleskarstvo, pleskanje fasade, pleskanje stanovanj, fasaderstvo, obnova fasade, DEMIT fasada, suhomontaža" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://speh.si/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Slikopleskarstvo Špeh d.o.o. | Fasaderstvo Gornji Grad" />
+  <meta property="og:description" content="Profesionalno slikopleskarstvo in fasaderstvo od leta 1991." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://speh.si/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple:  { DEFAULT: '#4F3D8F', dark: '#3a2d6e', light: '#6a57b0' },
+            cream:   { DEFAULT: '#F5F2EC', dark: '#E8E4DA' },
+            gold:    { DEFAULT: '#C8973A', light: '#e0b55a' },
+            charcoal:{ DEFAULT: '#1C1C2A' },
+            muted:   { DEFAULT: '#7E7E8F' },
+          },
+          fontFamily: {
+            display: ['"Fraunces"', 'Georgia', 'serif'],
+            body:    ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Špeh d.o.o.",
+    "alternateName": "Slikopleskarstvo Špeh",
+    "description": "Profesionalno slikopleskarstvo in fasaderstvo v Gornjem Gradu od leta 1991.",
+    "url": "https://speh.si",
+    "telephone": "+38638381133",
+    "email": "speh.toni@siol.net",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Podsmrečje 20",
+      "addressLocality": "Gornji Grad",
+      "postalCode": "3342",
+      "addressCountry": "SI"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 46.2967,
+      "longitude": 14.8097
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "15:00"
+      }
+    ],
+    "foundingDate": "1991",
+    "areaServed": "Slovenia",
+    "priceRange": "€€",
+    "sameAs": ["http://speh.si"]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root {
+      --purple:   #4F3D8F;
+      --purple-d: #3a2d6e;
+      --purple-l: #6a57b0;
+      --cream:    #F5F2EC;
+      --cream-d:  #E8E4DA;
+      --gold:     #C8973A;
+      --gold-l:   #e0b55a;
+      --charcoal: #1C1C2A;
+      --muted:    #7E7E8F;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      overflow-x: hidden;
+    }
+
+    /* ── GRAIN OVERLAY ─────────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 9999;
+      pointer-events: none;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    }
+
+    /* ── TYPOGRAPHY ────────────────────────────────────── */
+    .font-display { font-family: 'Fraunces', Georgia, serif; }
+    h1, h2, h3, .display { font-family: 'Fraunces', Georgia, serif; }
+    .tracking-display { letter-spacing: -0.03em; }
+    .tracking-label  { letter-spacing: 0.1em; }
+    @media (max-width: 640px) {
+      .stat-card { padding: 28px 16px; }
+      .stat-card .section-label { letter-spacing: 0.06em; font-size: 0.75rem; }
+    }
+    .leading-body    { line-height: 1.75; }
+
+    /* ── NAV ──────────────────────────────────────────── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      transition: background 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s;
+    }
+    #nav.scrolled {
+      background: rgba(245,242,236,0.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 rgba(79,61,143,0.1), 0 4px 24px rgba(28,28,42,0.08);
+    }
+    /* Logo visibility: white on transparent hero, original on cream */
+    #nav .nav-logo {
+      transition: filter 0.4s cubic-bezier(0.4,0,0.2,1);
+      filter: brightness(0) invert(1) drop-shadow(0 1px 4px rgba(0,0,0,0.3));
+    }
+    #nav.scrolled .nav-logo {
+      filter: none;
+    }
+    .nav-link {
+      position: relative; font-size: 0.875rem; font-weight: 500;
+      color: rgba(255,255,255,0.92); text-decoration: none;
+      padding-bottom: 2px;
+      transition: color 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -2px; left: 0; right: 100%;
+      height: 2px; background: var(--gold);
+      transition: right 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+    /* Scrolled state — dark background, dark text */
+    #nav.scrolled .nav-link { color: var(--charcoal); }
+    #nav.scrolled .nav-link::after { background: var(--purple); }
+    .nav-link:hover::after { right: 0; }
+    .nav-link:focus-visible { outline: 2px solid var(--purple); outline-offset: 4px; border-radius: 2px; }
+
+    /* ── BUTTONS ──────────────────────────────────────── */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--purple); color: #fff;
+      padding: 14px 32px; border-radius: 4px;
+      font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.9rem;
+      letter-spacing: 0.02em; text-decoration: none;
+      box-shadow: 0 4px 16px rgba(79,61,143,0.3), 0 1px 4px rgba(0,0,0,0.15);
+      transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s;
+      cursor: pointer; border: none;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(79,61,143,0.4), 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: #fff;
+      padding: 13px 30px; border-radius: 4px;
+      border: 2px solid rgba(255,255,255,0.7);
+      font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.9rem;
+      letter-spacing: 0.02em; text-decoration: none;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s cubic-bezier(0.34,1.56,0.64,1);
+      cursor: pointer;
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.12); border-color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn-outline:active { transform: translateY(0); }
+    .btn-outline:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+    .btn-gold {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); color: #fff;
+      padding: 14px 32px; border-radius: 4px;
+      font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.9rem;
+      letter-spacing: 0.02em; text-decoration: none;
+      box-shadow: 0 4px 16px rgba(200,151,58,0.35), 0 1px 4px rgba(0,0,0,0.12);
+      transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s;
+      cursor: pointer; border: none;
+    }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,151,58,0.45); }
+    .btn-gold:active { transform: translateY(0); }
+    .btn-gold:focus-visible { outline: 3px solid var(--purple); outline-offset: 3px; }
+
+    /* ── HERO ─────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      background: var(--charcoal);
+      position: relative; overflow: hidden;
+      display: flex; align-items: center;
+    }
+    #hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('http://speh.si/cache/widgetkit/gallery/7/f_fasaderstvo_speh_prej_potem_1-ff2a41dce6.JPG');
+      background-size: cover; background-position: center 35%;
+      opacity: 0.42;
+    }
+    .hero-gradient {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 15% 55%, rgba(79,61,143,0.55) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 80% at 85% 15%, rgba(200,151,58,0.12) 0%, transparent 50%),
+        linear-gradient(160deg, rgba(28,28,42,0.72) 0%, rgba(28,28,42,0.45) 100%);
+    }
+    #hero-clip {
+      position: absolute; bottom: -1px; left: 0; right: 0;
+      height: 120px; overflow: hidden;
+    }
+    #hero-clip svg { display: block; }
+
+    /* Fade-in animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .fade-up { opacity: 0; animation: fadeUp 0.7s cubic-bezier(0.34,1.56,0.64,1) forwards; }
+    .delay-1 { animation-delay: 0.15s; }
+    .delay-2 { animation-delay: 0.3s; }
+    .delay-3 { animation-delay: 0.45s; }
+    .delay-4 { animation-delay: 0.6s; }
+    .delay-5 { animation-delay: 0.75s; }
+
+    /* ── SECTION LABELS ───────────────────────────────── */
+    .section-label {
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── STAT CARDS ───────────────────────────────────── */
+    .stat-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 36px 32px;
+      box-shadow: 0 4px 32px rgba(79,61,143,0.09), 0 1px 4px rgba(0,0,0,0.05);
+      border-left: 4px solid var(--purple);
+      position: relative; overflow: hidden;
+      min-width: 0;
+      transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s;
+    }
+    .stat-card::after {
+      content: '';
+      position: absolute; top: -20px; right: -20px;
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,61,143,0.06) 0%, transparent 70%);
+    }
+    .stat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(79,61,143,0.14), 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .stat-number {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 4rem; font-weight: 700;
+      color: var(--purple); line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    /* ── SERVICE CARDS ────────────────────────────────── */
+    .service-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 36px 28px;
+      box-shadow: 0 2px 16px rgba(79,61,143,0.06), 0 1px 4px rgba(0,0,0,0.05);
+      border-bottom: 3px solid transparent;
+      transition:
+        transform 0.3s cubic-bezier(0.34,1.56,0.64,1),
+        box-shadow 0.3s,
+        border-color 0.3s;
+      position: relative; overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--purple), var(--gold));
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(79,61,143,0.13), 0 2px 8px rgba(0,0,0,0.08);
+      border-color: var(--cream-d);
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-card::after {
+      content: '→';
+      position: absolute; bottom: 20px; right: 24px;
+      font-size: 1rem; color: var(--purple);
+      opacity: 0; transform: translateX(-6px);
+      transition: opacity 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+    .service-card:hover::after { opacity: 1; transform: translateX(0); }
+    .service-card:hover {
+      background: linear-gradient(160deg, #fff 60%, rgba(79,61,143,0.03) 100%);
+    }
+
+    .service-icon {
+      width: 56px; height: 56px;
+      background: linear-gradient(135deg, rgba(79,61,143,0.1), rgba(200,151,58,0.08));
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+      transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), background 0.35s, box-shadow 0.35s;
+    }
+    .service-icon svg { width: 28px; height: 28px; color: var(--purple); transition: stroke 0.35s; }
+    .service-card:hover .service-icon {
+      transform: scale(1.12) rotate(-4deg);
+      background: rgba(79,61,143,0.12);
+      box-shadow: 0 4px 16px rgba(79,61,143,0.18);
+    }
+    .service-card:hover .service-icon svg { stroke: var(--purple); }
+
+    /* ── BEFORE/AFTER SLIDER ──────────────────────────── */
+    .ba-slider {
+      position: relative; overflow: hidden;
+      border-radius: 8px;
+      cursor: ew-resize;
+      user-select: none;
+      box-shadow: 0 8px 32px rgba(28,28,42,0.2), 0 2px 8px rgba(0,0,0,0.15);
+      aspect-ratio: 4/3;
+    }
+    .ba-slider img {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+    }
+    .ba-slider .ba-after { clip-path: none; }
+    .ba-slider .ba-before { z-index: 1; }
+    .ba-clip { position: absolute; inset: 0; z-index: 2; overflow: hidden; }
+    .ba-clip img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+    .ba-divider {
+      position: absolute; top: 0; bottom: 0; z-index: 3;
+      width: 3px; background: #fff;
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
+      left: 50%;
+    }
+    .ba-handle {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px; height: 44px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3), 0 0 0 3px rgba(79,61,143,0.3);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 4; cursor: ew-resize;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .ba-slider:hover .ba-handle {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 0 0 4px rgba(79,61,143,0.5);
+    }
+    .ba-label {
+      position: absolute; top: 16px; z-index: 5;
+      font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 5px 12px; border-radius: 3px;
+    }
+    .ba-label-before { left: 16px; background: rgba(28,28,42,0.75); color: #fff; }
+    .ba-label-after  { right: 16px; background: rgba(79,61,143,0.85); color: #fff; }
+
+    /* ── GALLERY ──────────────────────────────────────── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 240px;
+      gap: 12px;
+    }
+    .gallery-item {
+      position: relative; overflow: hidden;
+      border-radius: 8px;
+      background: var(--cream-d);
+      cursor: pointer;
+    }
+    .gallery-item img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-item::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(28,28,42,0.5) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-item:hover::after { opacity: 1; }
+    .gallery-item:focus-visible { outline: 3px solid var(--purple); outline-offset: 2px; }
+    .gallery-item span {
+      position: absolute; bottom: 12px; left: 16px; right: 16px;
+      color: #fff; font-size: 0.8rem; font-weight: 500;
+      opacity: 0; z-index: 1;
+      transition: opacity 0.3s;
+    }
+    .gallery-item:hover span { opacity: 1; }
+    .gallery-large { grid-row: span 2; aspect-ratio: auto; }
+
+    /* ── ABOUT SECTION ────────────────────────────────── */
+    .about-img-wrap {
+      position: relative; border-radius: 8px; overflow: hidden;
+      box-shadow: 0 20px 60px rgba(28,28,42,0.18), 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .about-img-wrap::before {
+      content: '';
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(135deg, rgba(79,61,143,0.2) 0%, transparent 50%);
+    }
+
+    /* ── BADGE ────────────────────────────────────────── */
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 16px; border-radius: 6px;
+      background: rgba(79,61,143,0.08);
+      border: 1px solid rgba(79,61,143,0.2);
+      font-size: 0.8rem; font-weight: 600; color: var(--purple);
+    }
+
+    /* ── PARTNERS ─────────────────────────────────────── */
+    .partner-item {
+      display: flex; align-items: center; justify-content: center;
+      padding: 14px 16px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(79,61,143,0.05), 0 1px 3px rgba(0,0,0,0.05);
+      transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.25s;
+      min-height: 72px;
+    }
+    @media (min-width: 768px) {
+      .partner-item { padding: 16px 24px; min-height: 80px; }
+    }
+    .partner-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(79,61,143,0.1), 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .partner-item img { max-height: 48px; max-width: 120px; object-fit: contain; filter: grayscale(30%); }
+    .partner-item:hover img { filter: grayscale(0%); }
+
+    /* ── CONTACT ──────────────────────────────────────── */
+    .contact-input {
+      width: 100%;
+      background: var(--cream);
+      border: 1.5px solid rgba(79,61,143,0.2);
+      border-radius: 6px;
+      padding: 12px 16px;
+      font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+      color: var(--charcoal);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .contact-input:focus {
+      border-color: var(--purple);
+      box-shadow: 0 0 0 3px rgba(79,61,143,0.12);
+    }
+    .contact-input::placeholder { color: var(--muted); }
+    label { font-size: 0.82rem; font-weight: 600; color: var(--charcoal); margin-bottom: 6px; display: block; }
+
+    /* ── SCROLL-ANIMATE ───────────────────────────────── */
+    .scroll-reveal {
+      transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1), transform 0.6s cubic-bezier(0.4,0,0.2,1);
+    }
+    .scroll-reveal.sr-pending {
+      opacity: 0; transform: translateY(24px);
+    }
+    .scroll-reveal.visible { opacity: 1 !important; transform: translateY(0) !important; }
+
+    /* ── DECORATIVE LINE ──────────────────────────────── */
+    .deco-line {
+      width: 64px; height: 3px;
+      background: linear-gradient(90deg, var(--purple), var(--gold));
+      border-radius: 2px;
+    }
+
+    /* ── MOBILE MENU ──────────────────────────────────── */
+    #mobile-menu {
+      display: none; flex-direction: column; gap: 4px;
+      position: absolute; top: 100%; left: 0; right: 0;
+      background: rgba(245,242,236,0.98); backdrop-filter: blur(12px);
+      padding: 16px 24px 24px;
+      border-top: 1px solid rgba(79,61,143,0.1);
+      box-shadow: 0 8px 32px rgba(28,28,42,0.1);
+    }
+    #mobile-menu.open { display: flex; }
+    .mobile-link {
+      padding: 12px 0; font-size: 1.05rem; font-weight: 500;
+      color: var(--charcoal); text-decoration: none;
+      border-bottom: 1px solid rgba(79,61,143,0.08);
+    }
+    .mobile-link:last-child { border-bottom: none; }
+    .mobile-link:hover { color: var(--purple); }
+    .hamburger-line {
+      display: block; width: 24px; height: 2px;
+      background: #fff;
+      transition: transform 0.25s, opacity 0.25s, background 0.35s;
+      transform-origin: center;
+    }
+    #nav.scrolled .hamburger-line { background: var(--charcoal); }
+
+    /* Phone link colour — white on hero, charcoal on scroll */
+    .nav-phone { transition: color 0.35s; }
+    #nav:not(.scrolled) .nav-phone { color: rgba(255,255,255,0.88) !important; }
+    #nav.scrolled .nav-phone { color: var(--charcoal) !important; }
+
+    /* ── TRUST BAR ────────────────────────────────────── */
+    .trust-item {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.82rem; font-weight: 500; color: rgba(255,255,255,0.85);
+    }
+    .trust-item svg { flex-shrink: 0; opacity: 0.9; }
+
+    /* ── SECTION DIVIDER ──────────────────────────────── */
+    .wave-divider { display: block; width: 100%; }
+
+    /* ── SCROLL TO TOP ────────────────────────────────── */
+    #scroll-top {
+      position: fixed; bottom: 32px; right: 32px; z-index: 50;
+      width: 48px; height: 48px;
+      background: var(--purple);
+      border-radius: 50%; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(79,61,143,0.35);
+      opacity: 0; transform: translateY(12px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    #scroll-top.visible { opacity: 1; transform: translateY(0); }
+    #scroll-top:hover { background: var(--purple-d); transform: translateY(-2px); }
+    #scroll-top:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+    /* ── RESPONSIVE ───────────────────────────────────── */
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-number { font-size: 2.8rem; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- NAVIGATION -->
+<!-- ──────────────────────────────────────────────────── -->
+<nav id="nav" role="navigation" aria-label="Glavna navigacija">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-3 flex-shrink-0" aria-label="Špeh d.o.o. - domov">
+      <img src="brand_assets/image-removebg-preview.png" alt="Špeh d.o.o. logo" class="h-12 w-auto nav-logo" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#storitve" class="nav-link">Storitve</a>
+      <a href="#projekti" class="nav-link">Projekti</a>
+      <a href="#o-nas" class="nav-link">O nas</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </div>
+
+    <!-- CTA + Hamburger -->
+    <div class="flex items-center gap-4">
+      <a href="tel:+38638381133" class="nav-phone hidden md:flex items-center gap-2 text-sm font-semibold hover:opacity-80">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9a16 16 0 006.92 6.91l1.19-1.19a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        03 838 11 33
+      </a>
+      <a href="#kontakt" class="btn-primary hidden md:inline-flex" style="padding:10px 22px;font-size:0.82rem">Brezplačna ponudba</a>
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-1" aria-label="Odpri meni" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" role="menu">
+      <a href="#storitve" class="mobile-link" role="menuitem">Storitve</a>
+      <a href="#projekti" class="mobile-link" role="menuitem">Projekti</a>
+      <a href="#o-nas" class="mobile-link" role="menuitem">O nas</a>
+      <a href="#kontakt" class="mobile-link" role="menuitem">Kontakt</a>
+      <a href="tel:+38638381133" class="mobile-link font-semibold" style="color:var(--purple)">📞 03 838 11 33</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- HERO -->
+<!-- ──────────────────────────────────────────────────── -->
+<section id="hero" aria-label="Uvod">
+  <div id="hero-bg" role="presentation"></div>
+  <div class="hero-gradient"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-40">
+    <div class="max-w-3xl">
+      <!-- Label -->
+      <p class="section-label mb-5 fade-up" style="color:rgba(200,151,58,0.9)">
+        Od leta 1991 &bull; Gornji Grad, Slovenija
+      </p>
+
+      <!-- H1 -->
+      <h1 class="font-display text-5xl md:text-7xl font-bold text-white tracking-display leading-tight mb-6 fade-up delay-1">
+        Fasade so<br/>
+        <em class="italic font-light" style="color:var(--gold)">naša strast.</em>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg md:text-xl font-body leading-body mb-10 fade-up delay-2" style="color:rgba(255,255,255,0.82); max-width:540px">
+        Profesionalno slikopleskarstvo, fasaderstvo in suhomontaža za stanovanjske in poslovne objekte po vsej Sloveniji.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-wrap gap-4 mb-14 fade-up delay-3">
+        <a href="#kontakt" class="btn-primary">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          Zahtevajte ponudbo
+        </a>
+        <a href="#projekti" class="btn-outline">
+          Oglejte si projekte
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="flex flex-wrap gap-x-8 gap-y-3 fade-up delay-4">
+        <div class="trust-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          35 let izkušenj
+        </div>
+        <div class="trust-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+          Brezplačna ocena
+        </div>
+        <div class="trust-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          Lastna ekipa strokovnjakov
+        </div>
+        <div class="trust-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Pon–Pet 07:00–15:00
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Diagonal bottom cut -->
+  <div id="hero-clip">
+    <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="wave-divider" style="height:120px">
+      <path d="M0,0 L1440,80 L1440,120 L0,120 Z" fill="#F5F2EC"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- STATS -->
+<!-- ──────────────────────────────────────────────────── -->
+<section id="stats" aria-label="Statistike" style="background:var(--cream);background-image:radial-gradient(ellipse 60% 80% at 90% 50%, rgba(79,61,143,0.06) 0%, transparent 60%), radial-gradient(ellipse 40% 60% at 10% 50%, rgba(200,151,58,0.05) 0%, transparent 60%);">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="stat-card scroll-reveal text-center">
+        <div class="stat-number" data-target="35" data-suffix="+" id="stat-0">0</div>
+        <p class="text-sm font-semibold mt-2 mb-1 tracking-label section-label">LET IZKUŠENJ</p>
+        <p class="text-xs" style="color:var(--muted)">Tradicija od leta 1991</p>
+      </div>
+      <div class="stat-card scroll-reveal text-center">
+        <div class="stat-number" data-target="500" data-suffix="+" id="stat-1">0</div>
+        <p class="text-sm font-semibold mt-2 mb-1 tracking-label section-label">PROJEKTOV</p>
+        <p class="text-xs" style="color:var(--muted)">Zaključenih naročil</p>
+      </div>
+      <div class="stat-card scroll-reveal text-center">
+        <div class="stat-number" data-target="9" data-suffix="" id="stat-2">0</div>
+        <p class="text-sm font-semibold mt-2 mb-1 tracking-label section-label">ZAPOSLENIH</p>
+        <p class="text-xs" style="color:var(--muted)">Stalni delavci</p>
+      </div>
+      <div class="stat-card scroll-reveal text-center">
+        <div class="stat-number" data-target="100" data-suffix="%" id="stat-3">0</div>
+        <p class="text-sm font-semibold mt-2 mb-1 tracking-label section-label">ZADOVOLJSTVO</p>
+        <p class="text-xs" style="color:var(--muted)">Garancija kakovosti</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- SERVICES -->
+<!-- ──────────────────────────────────────────────────── -->
+<section id="storitve" aria-labelledby="storitve-heading" style="background:#fff">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <!-- Header -->
+    <div class="max-w-2xl mb-16 scroll-reveal">
+      <p class="section-label mb-3">Naše storitve</p>
+      <div class="deco-line mb-5"></div>
+      <h2 id="storitve-heading" class="font-display text-4xl md:text-5xl font-bold tracking-display mb-6" style="line-height:1.1">
+        Kakovost, ki jo<br/><em class="italic font-light">vidite in občutite</em>
+      </h2>
+      <p class="leading-body" style="color:var(--muted)">
+        Od notranjega barvanja do celotne obnove fasade — naša ekipa strokovnjakov poskrbi za vsak detajl z izkušnjami in pravo opremo.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- 1 Notranje barvanje -->
+      <div class="service-card scroll-reveal">
+        <div class="service-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-3">Notranje barvanje</h3>
+        <p class="text-sm leading-body" style="color:var(--muted)">
+          Beljenje in barvanje notranjih prostorov: stanovanj, hiš, poslovnih prostorov. Gladki ometi, teksturne fineline in dekorativne površine.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(79,61,143,0.08);color:var(--purple)">Stanovanja</span>
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(79,61,143,0.08);color:var(--purple)">Poslovni prostori</span>
+        </div>
+      </div>
+
+      <!-- 2 Fasaderstvo -->
+      <div class="service-card scroll-reveal">
+        <div class="service-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-3">Fasaderstvo</h3>
+        <p class="text-sm leading-body" style="color:var(--muted)">
+          Izgradnja in obnova fasad z uveljavljenimi sistemi: DEMIT, Jubizol, Baumit, Roefix, Weber. Toplotna izolacija in zaščita pred vremenskimi vplivi.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(200,151,58,0.12);color:#8a6520">DEMIT</span>
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(200,151,58,0.12);color:#8a6520">Baumit</span>
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(200,151,58,0.12);color:#8a6520">Jubizol</span>
+        </div>
+      </div>
+
+      <!-- 3 Nano ometi -->
+      <div class="service-card scroll-reveal">
+        <div class="service-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-3">Nano ometi</h3>
+        <p class="text-sm leading-body" style="color:var(--muted)">
+          Sodobni nano tehnološki ometi za fasade in notranjost — samočistilni, odporni na alge in plesni, z dolgo obstojnostjo barve.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(79,61,143,0.08);color:var(--purple)">Samočistilni</span>
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(79,61,143,0.08);color:var(--purple)">Dolgotrajen</span>
+        </div>
+      </div>
+
+      <!-- 4 Suhomontaža -->
+      <div class="service-card scroll-reveal">
+        <div class="service-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3M3 16v3a2 2 0 002 2h3m8 0h3a2 2 0 002-2v-3"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-3">Suhomontaža Knauf</h3>
+        <p class="text-sm leading-body" style="color:var(--muted)">
+          Montaža suhomontažnih predelnih sten in stropov po sistemu Knauf. Hitreje, čisteje in stroškovno učinkoviteje kot klasična gradnja.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(200,151,58,0.12);color:#8a6520">Knauf sistem</span>
+        </div>
+      </div>
+
+      <!-- 5 Tapetništvo & dekorativni ometi -->
+      <div class="service-card scroll-reveal">
+        <div class="service-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-3">Tapetništvo & Wall Tattoo</h3>
+        <p class="text-sm leading-body" style="color:var(--muted)">
+          Polaganje tapet in dekorativnih wall tattoo nalepk za unikatno notranjost. Kopalnice, otroške sobe, dnevni prostori.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(79,61,143,0.08);color:var(--purple)">Tapete</span>
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(79,61,143,0.08);color:var(--purple)">Wall Tattoo</span>
+        </div>
+      </div>
+
+      <!-- 6 Parket & laminat + Dulux -->
+      <div class="service-card scroll-reveal">
+        <div class="service-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-3">Parket, laminat & mešanje barv</h3>
+        <p class="text-sm leading-body" style="color:var(--muted)">
+          Polaganje parketa in laminata. Storitev mešanja barv Dulux — izberemo točen odtenek po vaši želji na mestu samem.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(200,151,58,0.12);color:#8a6520">Dulux</span>
+          <span class="text-xs px-2 py-1 rounded-sm font-medium" style="background:rgba(200,151,58,0.12);color:#8a6520">Parket</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eko Sklad notice -->
+    <div class="mt-12 p-6 rounded-xl border scroll-reveal flex flex-wrap items-center gap-4" style="border-color:rgba(79,61,143,0.15);background:linear-gradient(135deg,rgba(79,61,143,0.04),rgba(200,151,58,0.04))">
+      <img src="http://speh.si/images/Eko_Sklad_logo_subvencija_12-m2.png" alt="Eko Sklad subvencija" class="h-14 object-contain" loading="lazy" />
+      <div>
+        <p class="font-semibold mb-1" style="color:var(--charcoal)">Eko sklad subvencija za fasado</p>
+        <p class="text-sm" style="color:var(--muted)">Pomagamo vam pri pridobitvi nepovratnih sredstev Eko sklada za toplotno izolacijo fasade. Prihranek do 20% stroškov!</p>
+      </div>
+      <a href="#kontakt" class="btn-gold ml-auto" style="padding:10px 22px;font-size:0.82rem">Izvedite več</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- CTA STRIP -->
+<!-- ──────────────────────────────────────────────────── -->
+<section aria-label="Kontakt poziv" style="background:var(--purple);background-image:radial-gradient(ellipse 80% 120% at 110% 50%, rgba(200,151,58,0.2) 0%, transparent 60%), radial-gradient(ellipse 60% 80% at -10% 50%, rgba(28,28,42,0.3) 0%, transparent 60%);">
+  <div class="max-w-7xl mx-auto px-6 py-14 flex flex-wrap items-center justify-between gap-6">
+    <div>
+      <p class="font-display text-2xl md:text-3xl font-bold text-white tracking-display mb-1">Pripravite vaš projekt.</p>
+      <p class="text-sm" style="color:rgba(255,255,255,0.7)">Brezplačen ogled in ocena stroškov — brez obveznosti.</p>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      <a href="tel:+38638381133" class="btn-gold">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9a16 16 0 006.92 6.91l1.19-1.19a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        03 838 11 33
+      </a>
+      <a href="#kontakt" class="btn-outline">Pišite nam</a>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- BEFORE / AFTER PROJECTS -->
+<!-- ──────────────────────────────────────────────────── -->
+<section id="projekti" aria-labelledby="projekti-heading" style="background:var(--charcoal)">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="max-w-2xl mb-16 scroll-reveal">
+      <p class="section-label mb-3">Naši projekti</p>
+      <div class="deco-line mb-5"></div>
+      <h2 id="projekti-heading" class="font-display text-4xl md:text-5xl font-bold tracking-display mb-6 text-white" style="line-height:1.1">
+        Transformacije,<br/><em class="italic font-light" style="color:var(--gold)">ki govorijo zase</em>
+      </h2>
+      <p class="leading-body" style="color:rgba(255,255,255,0.65)">
+        Povlecite drsnike in si oglejte transformacije fasad. Vsak projekt je dokaz naše predanosti kakovosti in natančnosti.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Slider A -->
+      <div class="scroll-reveal">
+        <div class="ba-slider" id="ba-0" data-pos="50">
+          <img class="ba-after" src="http://speh.si/cache/widgetkit/gallery/7/a_fasaderstvo_speh_prej_potem_1-ec3e7cdc9b.JPG" alt="Fasada projekt A - po obnovi" loading="lazy" />
+          <div class="ba-clip" id="ba-clip-0" style="width:50%">
+            <img class="ba-before" src="http://speh.si/cache/widgetkit/gallery/7/a_fasaderstvo_speh_prej_potem-c7dc71ea9e.JPG" alt="Fasada projekt A - pred obnovo" loading="lazy" />
+          </div>
+          <div class="ba-divider" id="ba-div-0" style="left:50%">
+            <div class="ba-handle">
+              <svg width="20" height="20" fill="none" stroke="var(--purple)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg>
+            </div>
+          </div>
+          <span class="ba-label ba-label-before">PREJ</span>
+          <span class="ba-label ba-label-after">POTEM</span>
+        </div>
+        <p class="text-sm font-medium mt-3" style="color:rgba(255,255,255,0.7)">Obnova fasade — projekt A</p>
+      </div>
+
+      <!-- Slider B -->
+      <div class="scroll-reveal">
+        <div class="ba-slider" id="ba-1" data-pos="50">
+          <img class="ba-after" src="http://speh.si/cache/widgetkit/gallery/7/b_fasaderstvo_speh_prej_potem_1-e8bba90dc1.JPG" alt="Fasada projekt B - po obnovi" loading="lazy" />
+          <div class="ba-clip" id="ba-clip-1" style="width:50%">
+            <img class="ba-before" src="http://speh.si/cache/widgetkit/gallery/7/b_fasaderstvo_speh_prej_potem-427625ed9f.JPG" alt="Fasada projekt B - pred obnovo" loading="lazy" />
+          </div>
+          <div class="ba-divider" id="ba-div-1" style="left:50%">
+            <div class="ba-handle">
+              <svg width="20" height="20" fill="none" stroke="var(--purple)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg>
+            </div>
+          </div>
+          <span class="ba-label ba-label-before">PREJ</span>
+          <span class="ba-label ba-label-after">POTEM</span>
+        </div>
+        <p class="text-sm font-medium mt-3" style="color:rgba(255,255,255,0.7)">Obnova fasade — projekt B</p>
+      </div>
+
+      <!-- Slider C -->
+      <div class="scroll-reveal">
+        <div class="ba-slider" id="ba-2" data-pos="50">
+          <img class="ba-after" src="http://speh.si/cache/widgetkit/gallery/7/c_fasaderstvo_speh_prej_potem_1-cb4faa9a6e.JPG" alt="Fasada projekt C - po obnovi" loading="lazy" />
+          <div class="ba-clip" id="ba-clip-2" style="width:50%">
+            <img class="ba-before" src="http://speh.si/cache/widgetkit/gallery/7/c_fasaderstvo_speh_prej_potem-4ec9b5decc.JPG" alt="Fasada projekt C - pred obnovo" loading="lazy" />
+          </div>
+          <div class="ba-divider" id="ba-div-2" style="left:50%">
+            <div class="ba-handle">
+              <svg width="20" height="20" fill="none" stroke="var(--purple)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg>
+            </div>
+          </div>
+          <span class="ba-label ba-label-before">PREJ</span>
+          <span class="ba-label ba-label-after">POTEM</span>
+        </div>
+        <p class="text-sm font-medium mt-3" style="color:rgba(255,255,255,0.7)">Obnova fasade — projekt C</p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-14 text-center scroll-reveal">
+      <a href="#kontakt" class="btn-gold">
+        Naročite pregled in ponudbo
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- ABOUT -->
+<!-- ──────────────────────────────────────────────────── -->
+<section id="o-nas" aria-labelledby="o-nas-heading" style="background:#fff">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Image column -->
+      <div class="relative scroll-reveal order-2 md:order-1" style="padding-bottom:16px;padding-right:16px">
+        <div class="about-img-wrap">
+          <img src="http://speh.si/cache/widgetkit/gallery/7/a_fasaderstvo_speh_prej_potem_1-ec3e7cdc9b.JPG" alt="Špeh d.o.o. fasaderstvo — zaključen projekt" class="w-full object-cover" style="min-height:400px;max-height:560px;display:block" loading="lazy" />
+        </div>
+        <!-- Decorative accent outside the overflow:hidden wrapper -->
+        <div class="absolute bottom-0 right-0 w-28 h-28 rounded-xl" style="background:linear-gradient(135deg,var(--purple),var(--gold));opacity:0.18;z-index:0"></div>
+        <!-- Floating years badge -->
+        <div class="absolute top-8 -right-4 z-10 flex flex-col items-center justify-center w-20 h-20 rounded-full text-white shadow-xl" style="background:var(--purple);box-shadow:0 8px 24px rgba(79,61,143,0.4)">
+          <span class="font-display font-bold text-xl" style="line-height:1;letter-spacing:-0.03em">35</span>
+          <span style="font-size:0.58rem;letter-spacing:0.08em;opacity:0.85;font-weight:600">LET</span>
+        </div>
+      </div>
+
+      <!-- Text column -->
+      <div class="scroll-reveal order-1 md:order-2">
+        <p class="section-label mb-3">O podjetju</p>
+        <div class="deco-line mb-5"></div>
+        <h2 id="o-nas-heading" class="font-display text-4xl md:text-5xl font-bold tracking-display mb-6" style="line-height:1.1">
+          Tri desetletja<br/><em class="italic font-light">mojstrstva</em>
+        </h2>
+
+        <div class="space-y-4 leading-body text-sm mb-8" style="color:var(--muted)">
+          <p>
+            Podjetje <strong style="color:var(--charcoal)">Špeh d.o.o.</strong> je bilo ustanovljeno leta <strong style="color:var(--charcoal)">1991</strong> v Gornjem Gradu. V več kot treh desetletjih smo postali zaupanja vreden partner za lastnike stanovanj, hiš in poslovnih objektov po vsej Sloveniji.
+          </p>
+          <p>
+            Naša ekipa <strong style="color:var(--charcoal)">strokovnjakov</strong> pokriva vse od notranjega barvanja do kompleksnih fasaderskih sistemov. Fasade so naša strast — in to se vidi v vsakem projektu.
+          </p>
+          <p>
+            Sodelujemo z vodilnimi blagovnimi znamkami: <strong style="color:var(--charcoal)">Baumit, DEMIT, Jubizol, Knauf in Dulux</strong>. Ponujamo tudi svetovanje pri pridobitvi subvencij Eko sklada za energetske sanacije.
+          </p>
+        </div>
+
+        <!-- Badges -->
+        <div class="flex flex-wrap gap-3 mb-8">
+          <div class="badge">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            35 let tradicije
+          </div>
+          <div class="badge">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+            Garancija kakovosti
+          </div>
+          <div class="badge">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75M9 11a4 4 0 100-8 4 4 0 000 8z"/></svg>
+            Lastna ekipa
+          </div>
+          <div class="badge">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Bonitetna ocena A+
+          </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="p-5 rounded-xl space-y-3" style="background:var(--cream);border:1px solid rgba(79,61,143,0.1)">
+          <div class="flex items-center gap-3 text-sm">
+            <svg width="18" height="18" fill="none" stroke="var(--purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9a16 16 0 006.92 6.91l1.19-1.19a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+38638381133" class="font-semibold hover:text-purple transition-colors" style="color:var(--charcoal)">03 838 11 33</a>
+            <span style="color:var(--muted)">|</span>
+            <a href="tel:+38641465744" class="font-semibold hover:text-purple transition-colors" style="color:var(--charcoal)">041 465 744</a>
+          </div>
+          <div class="flex items-center gap-3 text-sm">
+            <svg width="18" height="18" fill="none" stroke="var(--purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:speh.toni@siol.net" class="hover:text-purple transition-colors" style="color:var(--charcoal)">speh.toni@siol.net</a>
+          </div>
+          <div class="flex items-center gap-3 text-sm">
+            <svg width="18" height="18" fill="none" stroke="var(--purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span style="color:var(--charcoal)">Podsmrečje 20, 3342 Gornji Grad</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm">
+            <svg width="18" height="18" fill="none" stroke="var(--purple)" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span style="color:var(--muted)">Pon–Pet: <strong style="color:var(--charcoal)">07:00–15:00</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- PARTNERS -->
+<!-- ──────────────────────────────────────────────────── -->
+<section id="partnerji" aria-label="Naši partnerji" style="background:var(--cream-d)">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center mb-12 scroll-reveal">
+      <p class="section-label mb-3">Naši partnerji</p>
+      <h2 class="font-display text-2xl font-semibold tracking-display" style="color:var(--charcoal)">Delamo z najboljšimi blagovnimi znamkami</h2>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 scroll-reveal">
+      <div class="partner-item"><img src="http://speh.si/images/baumit_logo.png" alt="Baumit" loading="lazy" /></div>
+      <div class="partner-item"><img src="http://speh.si/images/weber_logo.png" alt="Weber" loading="lazy" /></div>
+      <div class="partner-item"><img src="http://speh.si/images/demit_logo.png" alt="DEMIT" loading="lazy" /></div>
+      <div class="partner-item"><img src="http://speh.si/images/jubizol_fasada_logo.png" alt="Jubizol" loading="lazy" /></div>
+      <div class="partner-item"><img src="http://speh.si/images/roefix_logo.png" alt="Roefix" loading="lazy" /></div>
+      <div class="partner-item"><img src="http://speh.si/images/knauf_suhomontaza_logo_1.jpg" alt="Knauf" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- CONTACT -->
+<!-- ──────────────────────────────────────────────────── -->
+<section id="kontakt" aria-labelledby="kontakt-heading" style="background:#fff">
+  <div class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="max-w-2xl mb-16 scroll-reveal">
+      <p class="section-label mb-3">Stopite v stik</p>
+      <div class="deco-line mb-5"></div>
+      <h2 id="kontakt-heading" class="font-display text-4xl md:text-5xl font-bold tracking-display mb-4" style="line-height:1.1">
+        Zahtevajte<br/><em class="italic font-light" style="color:var(--gold)">brezplačno ponudbo</em>
+      </h2>
+      <p class="leading-body text-sm" style="color:var(--muted)">Pokličite nas, pišite ali izpolnite obrazec. Odgovorimo v 24 urah ob delavnikih.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Contact Info -->
+      <div class="space-y-6 scroll-reveal order-2 md:order-1">
+        <h3 class="font-display text-xl font-semibold mb-4">Kontaktni podatki</h3>
+
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(79,61,143,0.1)">
+            <svg width="18" height="18" fill="none" stroke="var(--purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9a16 16 0 006.92 6.91l1.19-1.19a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="text-xs font-semibold tracking-label section-label mb-1">TELEFON</p>
+            <a href="tel:+38638381133" class="font-semibold hover:text-purple transition-colors block" style="color:var(--charcoal)">03 838 11 33</a>
+            <a href="tel:+38641465744" class="font-semibold hover:text-purple transition-colors block" style="color:var(--charcoal)">041 465 744</a>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(79,61,143,0.1)">
+            <svg width="18" height="18" fill="none" stroke="var(--purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p class="text-xs font-semibold tracking-label section-label mb-1">E-POŠTA</p>
+            <a href="mailto:speh.toni@siol.net" class="font-semibold hover:text-purple transition-colors" style="color:var(--charcoal)">speh.toni@siol.net</a>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(79,61,143,0.1)">
+            <svg width="18" height="18" fill="none" stroke="var(--purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p class="text-xs font-semibold tracking-label section-label mb-1">NASLOV</p>
+            <p class="font-semibold" style="color:var(--charcoal)">Podsmrečje 20</p>
+            <p style="color:var(--muted)">3342 Gornji Grad, Slovenija</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(79,61,143,0.1)">
+            <svg width="18" height="18" fill="none" stroke="var(--purple)" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <p class="text-xs font-semibold tracking-label section-label mb-1">DELOVNI ČAS</p>
+            <p class="font-semibold" style="color:var(--charcoal)">Pon–Pet: 07:00–15:00</p>
+            <p class="text-sm" style="color:var(--muted)">Sobota in nedelja: zaprto</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="md:col-span-2 scroll-reveal order-1 md:order-2">
+        <form id="contact-form" novalidate class="space-y-5">
+          <div class="grid md:grid-cols-2 gap-5">
+            <div>
+              <label for="ime">Ime in priimek *</label>
+              <input type="text" id="ime" name="ime" class="contact-input" placeholder="npr. Janez Novak" required autocomplete="name" />
+            </div>
+            <div>
+              <label for="telefon">Telefon *</label>
+              <input type="tel" id="telefon" name="telefon" class="contact-input" placeholder="031 000 000" required autocomplete="tel" />
+            </div>
+          </div>
+          <div>
+            <label for="email">E-pošta</label>
+            <input type="email" id="email" name="email" class="contact-input" placeholder="ime@primer.si" autocomplete="email" />
+          </div>
+          <div>
+            <label for="storitev">Vrsta storitve</label>
+            <select id="storitev" name="storitev" class="contact-input" style="cursor:pointer">
+              <option value="">— Izberite storitev —</option>
+              <option>Notranje barvanje</option>
+              <option>Fasaderstvo / obnova fasade</option>
+              <option>Nano ometi</option>
+              <option>Suhomontaža Knauf</option>
+              <option>Tapetništvo / Wall Tattoo</option>
+              <option>Parket &amp; laminat</option>
+              <option>Mešanje barv Dulux</option>
+              <option>Drugo</option>
+            </select>
+          </div>
+          <div>
+            <label for="sporocilo">Sporočilo *</label>
+            <textarea id="sporocilo" name="sporocilo" rows="4" class="contact-input resize-none" placeholder="Opišite vaš projekt ali zastavljeno vprašanje..." required></textarea>
+          </div>
+          <div id="form-success" class="hidden p-4 rounded-lg text-sm font-medium" style="background:rgba(79,61,143,0.08);color:var(--purple);border:1px solid rgba(79,61,143,0.2)">
+            Hvala za vaše sporočilo! Odgovorimo v 24 urah ob delavnikih.
+          </div>
+          <button type="submit" class="btn-primary w-full justify-center" style="font-size:1rem;padding:16px 32px">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Pošljite povpraševanje
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="mt-16 rounded-xl overflow-hidden scroll-reveal" style="box-shadow:0 8px 32px rgba(28,28,42,0.1)">
+      <iframe
+        title="Lokacija Špeh d.o.o. - Gornji Grad"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.5!2d14.8097!3d46.2967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765c5e5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sGornji%20Grad%2C%20Slovenia!5e0!3m2!1ssl!2ssi!4v1700000000000"
+        width="100%" height="380" style="border:0;" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- FOOTER -->
+<!-- ──────────────────────────────────────────────────── -->
+<footer style="background:var(--charcoal);color:rgba(255,255,255,0.75)" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-3 gap-12 mb-12">
+
+      <!-- Brand -->
+      <div>
+        <img src="brand_assets/image-removebg-preview.png" alt="Špeh d.o.o." class="h-14 mb-5" style="filter:brightness(1.1) saturate(0.8)" />
+        <p class="text-sm leading-body mb-5" style="color:rgba(255,255,255,0.55)">
+          Profesionalno slikopleskarstvo in fasaderstvo po vsej Sloveniji od leta 1991.
+        </p>
+        <p class="text-xs font-semibold" style="color:var(--gold)">Fasade so naša strast.</p>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <p class="text-xs font-semibold tracking-label mb-5" style="color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.12em">Storitve</p>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#storitve" class="hover:text-white transition-colors" style="color:rgba(255,255,255,0.65)">Notranje barvanje</a></li>
+          <li><a href="#storitve" class="hover:text-white transition-colors" style="color:rgba(255,255,255,0.65)">Fasaderstvo</a></li>
+          <li><a href="#storitve" class="hover:text-white transition-colors" style="color:rgba(255,255,255,0.65)">Suhomontaža Knauf</a></li>
+          <li><a href="#storitve" class="hover:text-white transition-colors" style="color:rgba(255,255,255,0.65)">Nano ometi</a></li>
+          <li><a href="#storitve" class="hover:text-white transition-colors" style="color:rgba(255,255,255,0.65)">Tapetništvo &amp; Wall Tattoo</a></li>
+          <li><a href="#storitve" class="hover:text-white transition-colors" style="color:rgba(255,255,255,0.65)">Parket &amp; laminat</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <p class="text-xs font-semibold tracking-label mb-5" style="color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.12em">Kontakt</p>
+        <div class="space-y-3 text-sm">
+          <div class="flex items-center gap-2">
+            <svg width="15" height="15" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9a16 16 0 006.92 6.91l1.19-1.19a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+38638381133" class="hover:text-white transition-colors" style="color:rgba(255,255,255,0.65)">03 838 11 33</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg width="15" height="15" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9a16 16 0 006.92 6.91l1.19-1.19a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+38641465744" class="hover:text-white transition-colors" style="color:rgba(255,255,255,0.65)">041 465 744</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg width="15" height="15" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:speh.toni@siol.net" class="hover:text-white transition-colors" style="color:rgba(255,255,255,0.65)">speh.toni@siol.net</a>
+          </div>
+          <div class="flex items-start gap-2">
+            <svg width="15" height="15" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24" style="margin-top:2px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span style="color:rgba(255,255,255,0.65)">Podsmrečje 20<br/>3342 Gornji Grad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="pt-8 flex flex-wrap items-center justify-between gap-4" style="border-top:1px solid rgba(255,255,255,0.08)">
+      <p class="text-xs" style="color:rgba(255,255,255,0.35)">
+        © 2024 Špeh d.o.o. Vse pravice pridržane. | Podsmrečje 20, 3342 Gornji Grad
+      </p>
+      <p class="text-xs" style="color:rgba(255,255,255,0.25)">Slikopleskarstvo &bull; Fasaderstvo &bull; Suhomontaža</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scroll to top -->
+<button id="scroll-top" aria-label="Nazaj na vrh">
+  <svg width="20" height="20" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+
+<!-- ──────────────────────────────────────────────────── -->
+<!-- JAVASCRIPT -->
+<!-- ──────────────────────────────────────────────────── -->
+<script>
+(function() {
+  'use strict';
+
+  // ── STICKY NAV ────────────────────────────────────────
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // ── HAMBURGER ─────────────────────────────────────────
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+    const [l1, l2, l3] = hamburger.querySelectorAll('.hamburger-line');
+    if (open) {
+      l1.style.transform = 'translateY(6px) rotate(45deg)';
+      l2.style.opacity = '0';
+      l3.style.transform = 'translateY(-6px) rotate(-45deg)';
+    } else {
+      l1.style.transform = l3.style.transform = '';
+      l2.style.opacity = '';
+    }
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    const [l1, l2, l3] = hamburger.querySelectorAll('.hamburger-line');
+    l1.style.transform = l3.style.transform = ''; l2.style.opacity = '';
+  }));
+
+  // ── SCROLL REVEAL ─────────────────────────────────────
+  const reveals = document.querySelectorAll('.scroll-reveal');
+  // Add hidden state via JS (progressive enhancement — no JS = always visible)
+  reveals.forEach(el => el.classList.add('sr-pending'));
+
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.remove('sr-pending');
+          entry.target.classList.add('visible');
+        }, i * 80);
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
+  reveals.forEach(el => revealObs.observe(el));
+
+  // Fallback: force all visible after 2.5s (catches any missed by observer)
+  setTimeout(() => {
+    reveals.forEach(el => {
+      el.classList.remove('sr-pending');
+      el.classList.add('visible');
+    });
+  }, 2500);
+
+  // ── COUNTER ANIMATION ─────────────────────────────────
+  function animateCounter(el, target, suffix) {
+    const duration = 1800;
+    const start = performance.now();
+    function step(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.floor(ease * target) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  const statEls = document.querySelectorAll('.stat-number[data-target]');
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        animateCounter(el, +el.dataset.target, el.dataset.suffix || '');
+        counterObs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  statEls.forEach(el => counterObs.observe(el));
+
+  // ── BEFORE / AFTER SLIDERS ────────────────────────────
+  document.querySelectorAll('.ba-slider').forEach((slider, idx) => {
+    const clip    = document.getElementById(`ba-clip-${idx}`);
+    const divider = document.getElementById(`ba-div-${idx}`);
+    let dragging = false;
+
+    function setPos(x) {
+      const rect = slider.getBoundingClientRect();
+      const pct = Math.min(Math.max((x - rect.left) / rect.width * 100, 2), 98);
+      clip.style.width    = pct + '%';
+      divider.style.left  = pct + '%';
+    }
+
+    slider.addEventListener('mousedown', e => { dragging = true; setPos(e.clientX); e.preventDefault(); });
+    slider.addEventListener('touchstart', e => { dragging = true; setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('mousemove', e => { if (dragging) setPos(e.clientX); });
+    window.addEventListener('touchmove', e => { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('mouseup', () => { dragging = false; });
+    window.addEventListener('touchend', () => { dragging = false; });
+  });
+
+  // ── SCROLL TO TOP ─────────────────────────────────────
+  const scrollBtn = document.getElementById('scroll-top');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('visible', window.scrollY > 600);
+  }, { passive: true });
+  scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // ── FORM ──────────────────────────────────────────────
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const required = this.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(el => {
+      if (!el.value.trim()) { el.style.borderColor = '#e05252'; valid = false; }
+      else { el.style.borderColor = ''; }
+    });
+    if (valid) {
+      document.getElementById('form-success').classList.remove('hidden');
+      this.reset();
+      setTimeout(() => document.getElementById('form-success').classList.add('hidden'), 6000);
+    }
+  });
+
+})();
+</script>
+
+</body>
+</html>
